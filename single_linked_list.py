@@ -116,6 +116,7 @@ class SingleLinkedList(object):
                     self._head = cur.next
                 else:
                     pre.next = cur.next
+                break
             else:    # delete the first one. To delete all, removel else:
                 pre = cur
                 cur = cur.next
