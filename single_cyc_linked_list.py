@@ -1,3 +1,11 @@
+# 几种情况：
+# # 链表为空
+# # 链表只有一个node
+# # 第一个node
+# # 最后一个node
+# # 中间的node
+
+
 class Node(object):
     def __init__(self, elem):
         self.elem = elem

@@ -17,9 +17,11 @@
 # 如果操作的对象是linked list里边的node，一定考虑linked list为空，里边没有Node的情况
 
 '''while后边的条件'''
-# cur != None 还是 cur.next != None 取决于你需要的操作在while里边完成
-# 还是在while外边完成。如果在里边完成用前者，因为你不在意下一个是啥。
-# 如果在外边完成用后者，因为执行完最后一个循环cur不能指向None，None不是Node，
+# cur != None 还是 cur.next != None 取决于
+# （1）你需要的是cur.next的行为还是最终cur或者cur.next这个数
+# （2）还取决于while里，先执行动作 还是 先向下移
+# 如果要这个行为，cur.next ???
+# 如果要这个数???
 # 不能执行Node相关的操作。
 
 class Node(object):
