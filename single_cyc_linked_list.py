@@ -35,7 +35,8 @@ class SingleCycLinkedList(object):
             print(cur.elem)
             while cur.next != self._head:
                 cur = cur.next
-                print(cur.elem)
+                print(cur.elem, , end=" ")
+            print("")
 
     def add(self, item):
         node = Node(item)
@@ -97,7 +98,6 @@ class SingleCycLinkedList(object):
                     if cur.elem == item:
                         if cur.next == self._head:
                             pre.next = self.head
-                            
                         else:
                             pre.next = cur.next
                         break

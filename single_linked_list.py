@@ -54,7 +54,7 @@ class SingleLinkedList(object):
         while cur != None: 
             print(cur.elem, end=" ")
             cur = cur.next
-        print("")
+        print("") # identical to pressing enter
 
     def add(self, elem):
         node = Node(elem)
