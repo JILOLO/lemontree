@@ -25,6 +25,23 @@ def selection_sort(alist):
         # Stability
         if max_index != j:
             alist[j], alist[max_index] = alist[max_index], alist[j]
+            
+  def selection_sort(alist):
+    n = len(alist) 
+    for j in range(n):
+        min_id = j
+        for i in range(j+1, n):
+            if alist[i] < alist[min_id]:
+                min_id = i
+        # stability
+        if min_index != j:
+          alist[j], alist[min_id] = alist[min_id], alist[j]
+ 
+
+
+
+alist = [54,226,92,17,77,31,44,55,20]
+print(selection_sort(alist))
 
 li = [54,26,93,17,77,31,44,55,20]
 selection_sort(li)
